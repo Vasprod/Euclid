@@ -1,0 +1,477 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "MyFontRegular";
+    src: local('Montserrat Regular'), url('/fonts/montserrat-regular.woff2') format('woff2'), url('/fonts/montserrat-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFontMedium";
+    src: local('Montserrat Medium'), url('/fonts/montserrat-medium.woff2') format('woff2'), url('/fonts/montserrat-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFontSemiBold";
+    src: local('Montserrat Semi Bold'), url('/fonts/montserrat-semibold.woff2') format('woff2'), url('/fonts/montserrat-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFontBold";
+    src: local('Montserrat Bold'), url('/fonts/montserrat-bold.woff2') format('woff2'), url('/fonts/montserrat-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFontExtraBold";
+    src: local('Montserrat Extra Bold'), url('/fonts/montserrat-extrabold.woff2') format('woff2'), url('/fonts/montserrat-extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+  :root {
+    --border-radius: 32px;
+    --color-default: #FF9900;
+    --color-focus: #FFB84D;
+    --color-active: #E1670E;
+    --color-green: #97EE3F;
+    --color-white-gray: #CACACA;
+    --text-color-default: #000000;
+    --text-color-white: #FFFFFF;
+    --background-color-gray: #414141;
+    --icon-color: #666666;
+    --filter-gray: #00000080 50%;
+  }
+
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 1770px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  input,
+  textarea {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .text_h1 {
+    margin-bottom: 18px;
+    font-family: "MyFontExtraBold";
+    font-size: 70px;
+    line-height: 85.33px;
+    font-weight: 800;
+    color: var(--text-color-white);
+  }
+  
+  .text_h2 {
+    margin-bottom: 17px;
+    font-family: "MyFontRegular";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.51px;
+    color: var(--text-color-default);
+  }
+  
+  .text_h3 {
+    font-family: "MyFontBold";
+    font-size: 24px;
+    line-height: 29.26px;
+    color: var(--text-color-default);
+  }
+  
+  .text_p {
+    font-family: "MyFontRegular";
+    font-size: 16px;
+    line-height: 32px;
+  }
+  
+  .text_nav_header {
+    font-family: "MyFontSemiBold";
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  
+  .text_nav_footer {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  
+  .btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: calc(var(--border-radius) / 2);
+    background-color: transparent;
+    font-family: "MyFontBold";
+    font-size: 16px;
+    line-height: 19.5px;
+    cursor: pointer;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .container {
+    margin-bottom: 50px;
+  }
+
+  /* header */
+
+  .header {
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: 50px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-left: 74px;
+    padding: 14px 0;
+  }
+
+  .header__nav {
+    justify-content: space-between;
+    align-items: center;
+    gap: 85px;
+  }
+
+  .header__list {
+    gap: 85px;
+  }
+
+  .header__item {
+    margin-right: 75px;
+  }
+
+  /* offers */
+
+  .offers {
+    min-height: 620px;
+    background: url(/img/low-angle-photo-of-balconies-2462015\ 1.png) no-repeat;
+    min-height: 100%;
+  }
+
+  .offers__container {
+    display: inline-block;
+    max-width: 837px;
+    min-height: 100%;
+    margin: 105px 80px;
+  }
+
+  .text_p_off {
+    margin-bottom: 90px;
+    font-family: "MyFontBold";
+    font-size: 24px;
+    line-height: 29.26px;
+    color: var(--text-color-white);
+  }
+
+  .offers__btn {
+    min-width: 280px;
+    min-height: 78px;
+    background-color: var(--color-default);
+    font-size: 23px;
+    line-height: 28.04px;
+    color: var(--text-color-white)
+  }
+
+  /* about as */
+
+  .container_two {
+    margin-bottom: 105px;
+  }
+
+  .about__article_text {
+    max-width: 1235px;
+    margin-bottom: 48px;
+  }
+
+  .about__container_bottom {
+    max-height: 622px;
+    gap: 32px;
+  }
+
+  .about__left_card {
+    min-width: 868px;
+    min-height: 622px;
+    background: url(/img/rabichiy.png) no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .about__left_card_text {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 196px;
+    background: var(--filter-gray);
+    border-radius: var(--border-radius);
+  }
+
+  .text_color {
+    max-width: 454px;
+    margin: 50px 0 50px 50px;
+    align-items: center;
+    font-family: "MyFontBold";
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-color-white);
+  }
+
+  .btn_about {
+    min-width: 175px;
+    min-height: 60px;
+    margin-right: 50px;
+    border: 3px solid var(--color-default);
+    color: var(--text-color-white);
+  }
+
+  .about__container_right {
+    min-width: 870px;
+  }
+
+  .about__right_card {
+    align-items: center;
+    max-width: 870px;
+    max-height: 295px;
+    border: 1px solid var(--color-white-gray);
+    border-radius: var(--border-radius);
+  }
+
+  .about__right_card_content {
+    flex-direction: column;
+    max-width: 452px;
+    gap: 9px;
+  }
+
+  .card_one {
+    margin-bottom: 32px;
+  }
+
+  .about__icon {
+    margin: 65px 50px 65px 60px;
+    flex-shrink: 0;
+  }
+
+  /* stages */
+
+  .container_three {
+    margin-bottom: 105px;
+  }
+
+  .title_h2 {
+    margin-bottom: 30px;
+  }
+
+  .stages__container {
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .stages__card_text {
+    max-width: 758px;
+  }
+
+  .stages__card_img {
+    max-width: 870px;
+    max-height: 460px;
+  }
+
+  .title_h3 {
+    margin-bottom: 10px;
+  }
+
+  .text_stages {
+    margin-bottom: 16px;
+  }
+
+  .stages__btn_trans {
+    min-width: 147px;
+    min-height: 60px;
+    margin-right: 50px;
+    font-family: "MyFontRegular";
+    font-size: 16px;
+    border: 1px solid var(--text-color-default);
+    color: var(--text-color-default);
+  }
+
+  .stages__btn {
+    min-width: 175px;
+    min-height: 60px;
+    margin-right: 28px;
+    background-color: var(--color-default);
+    color: var(--text-color-white);
+  }
+
+  /* questions */
+
+  .container_for {
+    margin-bottom: 100px;
+  }
+
+  .questions__container_card {
+    gap: 32px;
+  }
+
+  .questions_title {
+    margin-bottom: 28px;
+  }
+
+  .questions__card {
+    max-width: 569px;
+    min-height: 292px;
+    border: 1px solid var(--color-white-gray);
+    border-radius: var(--border-radius);
+  }
+
+  .card_text {
+    padding: 65px 59px 60px 60px;
+  }
+
+  .questions__text_h3 {
+    margin-bottom: 8px;
+  }
+
+  /* footer */
+
+  .footer {
+    min-height: 594px;
+    margin-bottom: 100px;
+    background-color: var(--text-color-default);
+  }
+
+  .footer__container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 75px;
+  }
+
+  .footer__column_one {
+     max-width: 252px;
+     max-height: 494px;
+  }
+
+  .footer__logo {
+    margin-bottom: 18px;
+  }
+
+  .footer__nav_list {
+    margin-bottom: 90px;
+  }
+
+  .footer_icon-link {
+    gap: 25px;
+  }
+
+  .footer__nav_item {
+    font-family: "MyFontSemiBold";
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--color-white-gray);
+  }
+
+  .footer__column_two {
+    max-width: 570px;
+    max-height: 494px;
+  }
+
+  .footer__title {
+    color: var(--color-white-gray);
+  }
+
+  .footer__form {
+    appearance: none;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer__form_input {
+    appearance: none;
+    border: none;
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--background-color-gray);
+    border-radius: calc(var(--border-radius) / 2);
+    padding: 14px 24px;
+    color: var(--color-white-gray);
+  }
+
+  .footer__form_textarea {
+    appearance: none;
+    border: none;
+    width: 100%;
+    min-height: 150px;
+    background-color: var(--background-color-gray);
+    border-radius: calc(var(--border-radius) / 2);
+    padding: 14px 24px;
+    color: var(--color-white-gray);
+  }
+
+  .footer__column_three {
+    max-width: 363px;
+    max-height: 320px;
+  }
+
+  .footer__text {
+    font-family: "MyFontRegular";
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-white-gray);
+  }
+
+  .label {
+    font-family: "MyFontRegular";
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-white-gray);
+  }
+
+  .footer__btn {
+    min-width: 269px;
+    min-height: 58px;
+    background-color: var(--color-default);
+    font-size: 16px;
+    line-height: 28.04px;
+    color: var(--text-color-white)
+  }
