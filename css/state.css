@@ -1,0 +1,195 @@
+ 
+  *:focus-visible {
+    outline: transparent;
+    outline-offset: 2px;
+  }
+
+  /* header */
+
+  .text_nav_header:hover {
+    border-bottom: 2px solid var(--color-default);
+  }
+
+  .text_nav_header:focus {
+    border-bottom: none;
+    outline: 2px solid var(--color-default);
+  }
+
+  .text_nav_header:active {
+    outline: none;
+    border-bottom: 2px solid var(--color-active);
+    color: var(--color-active);
+    transition: color 0.1s;
+  }
+
+  .header__item {
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .icon {
+    position: absolute;
+  }
+
+  .icon_def {
+    display: block;
+  }
+
+  .icon_act {
+    display: none;
+  }
+
+  .header__item:hover .icon_def {
+    fill: var(--color-default);
+    transition: all 0.3s;
+  }
+
+  .header__item:focus .icon_def {
+    outline: 2px solid var(--color-default);
+    fill: var(--text-color-default);
+  }
+
+  .header__item:active .default {
+    display: none;
+  }
+
+  .header__item:active .icon_act {
+    display: block;
+  }
+
+  /* offers */
+
+  .offers__btn:hover,
+  .stages__btn:hover,
+  .footer__btn:hover {
+    background-color: var(--color-focus);
+    transition: 0.2s;
+  }
+
+  .offers__btn:active,
+  .stages__btn:active,
+  .footer__btn:active {
+    background-color: var(--color-active);
+    transition: 0.1s;
+  }
+
+  /* about */
+
+  .btn_about {
+    transition: all 0.2s; 
+  }
+
+  .btn_about:hover {
+    background-color: var(--color-default);
+  }
+
+  .btn_about:active {
+    border: none;
+    background-color: var(--color-active);
+  }
+
+  .about__left_card .about__left_card_text {
+    transition: 0.3s;
+  }
+
+  .about__left_card:hover .about__left_card_text {
+    background-color: #00000090;
+  }
+
+  /* stages */
+
+  .stages__btn_trans {
+    transition: all 0.2s;
+  }
+
+  .stages__btn_trans:hover {
+    border: none;
+    background-color: var(--icon-color);
+    color: var(--text-color-white);
+  }
+ 
+  .stages__btn_trans:active {
+    border: none;
+    background-color: var(--text-color-default);
+    color: var(--text-color-white);
+  }
+
+  /* questions */
+
+  .questions__card {
+    transition: 0.3s;
+  }
+
+  .questions__card:hover {
+    transform: scale(1.05);
+  }
+
+  /* footer */
+
+  .footer__nav_item {
+    transition: color 0.1s;
+  }
+
+  .footer__nav_item:hover {
+    color: var(--color-default);
+  }
+
+  .footer__nav_item:focus {
+    outline: 2px solid var(--color-default);
+  }
+
+  .footer__nav_item:active {
+    outline: none;
+    color: var(--color-active);
+  }
+
+  .footer__icon .icon {
+    transition: fill 0.2s;
+  }
+
+  .footer__icon:hover .icon {
+    fill: var(--color-default);
+  }
+
+  .footer__icon:focus .icon {
+    outline: 2px solid var(--color-default);
+  }
+
+  .footer__icon:active .icon {
+    outline: none;
+    fill: var(--color-active);
+  }
+
+  .footer__form_input, .footer__form_textarea {
+    transition: all 0.2s;
+  }
+
+  .footer__form_input:hover, .footer__form_textarea:hover {
+    background-color: var(--icon-color);
+  }
+
+  .footer__form_input:focus, .footer__form_textarea:focus {
+    outline: transparent;
+    color: var(--text-color-white);
+    background-color: var(--icon-color);
+  }
+
+  .footer__form_input:active, .footer__form_textarea:active {
+    background-color: var(--icon-color);
+  }
+
+  input::placeholder {
+    color: #999;
+    transition: color 0.3s ease;
+  }
+
+  textarea::placeholder {
+    color: #999;
+    transition: color 0.3s ease;
+  }
+
+  input:hover::placeholder,
+  textarea:hover::placeholder {
+    color: var(--text-color-white)
+  }

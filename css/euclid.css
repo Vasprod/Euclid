@@ -414,16 +414,20 @@ html {
   .footer__column_two {
     max-width: 570px;
     max-height: 494px;
+    margin-top: 5px;
+    margin-left: 110px;
   }
 
   .footer__title {
+    margin-bottom: 20px;
     color: var(--color-white-gray);
   }
 
   .footer__form {
+    min-width: 570px;
     appearance: none;
     flex-direction: column;
-    gap: 25px;
+    gap: 26px;
   }
 
   .footer__form_input {
@@ -442,10 +446,12 @@ html {
     border: none;
     width: 100%;
     min-height: 150px;
+    margin-bottom: 6px;
     background-color: var(--background-color-gray);
     border-radius: calc(var(--border-radius) / 2);
     padding: 14px 24px;
     color: var(--color-white-gray);
+    resize: none;
   }
 
   .footer__column_three {
@@ -459,12 +465,22 @@ html {
     line-height: 32px;
     color: var(--color-white-gray);
   }
+  
+  input[type="checkbox"], label {
+    cursor: pointer;
+  }
 
   .label {
     font-family: "MyFontRegular";
     font-size: 16px;
     line-height: 32px;
     color: var(--color-white-gray);
+  }
+
+  .footer__block_check {
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
   }
 
   .footer__btn {
@@ -475,3 +491,10 @@ html {
     line-height: 28.04px;
     color: var(--text-color-white)
   }
+
+  .header__item_list {
+    outline: none;
+    border-bottom: 2px solid transparent;
+  } 
+
+  
