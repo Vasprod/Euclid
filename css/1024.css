@@ -1,0 +1,73 @@
+@media (max-width: 1100px) and (min-width: 768) {
+    /* header */
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .header__logo {
+        max-width: 150px;
+        margin-left: 50px;
+    }
+
+    .nav__icon {
+        width: 100%;
+    }
+
+    .header__nav {
+        justify-content: none;
+        gap: 105px;
+    }
+
+    .header__list {
+        gap: 60px;
+    }
+
+    main  {
+        max-width: 924px;
+    }
+
+    /* offers */
+    .container {
+        margin-bottom: 40px;
+    }
+
+    .offers {
+        max-height: 668px;
+        background-image: url(/img/1024low-angle-photo-of-balconies-2462015\ 1.jpg);
+        border-radius: var(--border-radius);
+    }
+
+    .offers__container {
+        margin: 166px 77px 160px;
+    }
+
+    .text_h1 {
+        margin-bottom: 10px;
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    .text_p_off {
+        margin-bottom: 60px;
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    /* about */
+    .about__article_text {
+        margin-bottom: 58px;
+    }
+
+    .about__left_card {
+        min-width: 924px;
+        min-height: 640px;
+    }
+
+    .about__right_card {
+        min-width: 924px;
+    }
+
+    .about__icon {
+        margin: 65px 50px 65px 77px;
+    }
+}

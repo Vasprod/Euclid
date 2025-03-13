@@ -226,6 +226,7 @@ html {
   }
 
   .about__container_bottom {
+    flex-wrap: wrap;
     max-height: 622px;
     gap: 32px;
   }
