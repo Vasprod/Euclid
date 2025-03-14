@@ -149,7 +149,7 @@ html {
   }
 
   .container {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   /* header */
@@ -179,21 +179,24 @@ html {
   }
 
   .header__item {
-    margin-right: 75px;
+    margin-right: 103px;
   }
 
   /* offers */
-
   .offers {
-    min-height: 620px;
-    background: url(/img/low-angle-photo-of-balconies-2462015\ 1.png) no-repeat;
-    min-height: 100%;
+    width: 100%;
+    max-height: 620px;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(/img/low-angle-photo-of-balconies-2462015\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius);
   }
 
   .offers__container {
     display: inline-block;
-    max-width: 837px;
-    min-height: 100%;
     margin: 105px 80px;
   }
 
@@ -227,14 +230,15 @@ html {
 
   .about__container_bottom {
     flex-wrap: wrap;
-    max-height: 622px;
+    justify-content: center;
     gap: 32px;
   }
 
   .about__left_card {
     min-width: 868px;
     min-height: 622px;
-    background: url(/img/rabichiy.png) no-repeat;
+    background-image: url(/img/rabichiy.png);
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: var(--border-radius);
     flex-direction: column;
@@ -306,7 +310,6 @@ html {
 
   .stages__container {
     justify-content: space-between;
-    align-items: end;
   }
 
   .stages__card_text {
@@ -314,8 +317,14 @@ html {
   }
 
   .stages__card_img {
-    max-width: 870px;
-    max-height: 460px;
+    width: 50%; 
+    min-width: 400px; 
+    height: 460px;
+    background-image: url(../img/img.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: right bottom;  
+    align-self: flex-end; 
   }
 
   .title_h3 {
@@ -351,7 +360,8 @@ html {
   }
 
   .questions__container_card {
-    gap: 32px;
+    gap: 31px;
+    flex-wrap: wrap;
   }
 
   .questions_title {
@@ -366,6 +376,7 @@ html {
   }
 
   .card_text {
+    width: 100%;
     padding: 65px 59px 60px 60px;
   }
 
@@ -383,6 +394,7 @@ html {
 
   .footer__container {
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 50px 75px;

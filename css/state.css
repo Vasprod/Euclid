@@ -60,11 +60,20 @@
 
   /* offers */
 
+  .offers__btn,
+  .stages__btn,
+  .footer__btn {
+    transition: 0.2s;
+  }
+
   .offers__btn:hover,
   .stages__btn:hover,
   .footer__btn:hover {
     background-color: var(--color-focus);
-    transition: 0.2s;
+  }
+
+  .offers:hover .offers__btn {
+    transform: scale(1.05);
   }
 
   .offers__btn:active,
