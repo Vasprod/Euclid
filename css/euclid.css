@@ -55,6 +55,8 @@ html {
     --background-color-gray: #414141;
     --icon-color: #666666;
     --filter-gray: #00000080 50%;
+    --text-color-adaptive: #333333;
+    --border-radius-adaptive: 24px;
   }
 
   body {
@@ -185,8 +187,6 @@ html {
   /* offers */
   .offers {
     width: 100%;
-    max-height: 620px;
-    height: 100%;
     overflow: hidden;
     background-image: url(/img/low-angle-photo-of-balconies-2462015\ 1.png);
     background-repeat: no-repeat;
