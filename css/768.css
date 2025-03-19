@@ -2,13 +2,15 @@
     /* header */
     .header {
         max-height: 69px;
+        width: 100%;
+        padding: 0px 50px;
         margin-bottom: 40px;
-        gap: 43px;
         border-radius: 0 0 var(--border-radius-adaptive) var(--border-radius-adaptive);
+        justify-content: space-between;
     }
 
     .header__logo {
-        margin-left: 50px;
+        margin-left: 20px;
         padding: 17px 0;
     }
 
@@ -19,7 +21,7 @@
 
     .header__list {
         padding-top: 4px;
-        gap: 43px;
+        gap: 20px;
     }
 
     .header__nav {
@@ -28,6 +30,7 @@
 
     .header__item {
         margin-right: 5px;
+        width: 24px;
     }
 
     .text_nav_header {
@@ -80,6 +83,13 @@
         margin-bottom: 53px;
     }
 
+    .mobile{
+        display: none;
+    }
+    
+    .desctop{
+        display: flex;
+    }
     .about__left_card {
         min-width: 668px;
         min-height: 650px;

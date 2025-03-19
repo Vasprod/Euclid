@@ -92,6 +92,12 @@ html {
     text-decoration: none;
     color: inherit;
   }
+
+  .header__block{
+    max-width: calc(100%-2px);
+    width: 100%;
+    overflow: hidden;
+  }
   
   .text_h1 {
     margin-bottom: 18px;
@@ -397,7 +403,6 @@ html {
 
   .footer {
     min-height: 594px;
-    margin-bottom: 100px;
     background-color: var(--text-color-default);
   }
 
