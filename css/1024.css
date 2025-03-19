@@ -1,7 +1,9 @@
 @media (max-width: 1117px) and (min-width: 898px) {
     /* header */
     .header {
+        width: 100%;
         margin-bottom: 40px;
+        gap: 90px;
     }
 
     .header__logo {
@@ -18,8 +20,8 @@
     }
 
     .header__nav {
-        justify-content: none;
-        gap: 100px;
+        margin-right: 10px;
+        margin-left: 15px;
     }
 
     .header__list {

@@ -3,6 +3,7 @@
     .header {
         max-height: 69px;
         margin-bottom: 40px;
+        gap: 43px;
         border-radius: 0 0 var(--border-radius-adaptive) var(--border-radius-adaptive);
     }
 
@@ -22,11 +23,11 @@
     }
 
     .header__nav {
-        gap: 39px;
+        margin: 0;
     }
 
     .header__item {
-        margin-right: 78px;
+        margin-right: 5px;
     }
 
     .text_nav_header {
@@ -46,7 +47,7 @@
 
     .offers {
         width: 100%;
-        background-image: url(/img/Frame\ 33.jpg);
+        background-image: url(/img/768.jpg);
         border-radius: var(--border-radius-adaptive);
     }
 

@@ -57,6 +57,7 @@ html {
     --filter-gray: #00000080 50%;
     --text-color-adaptive: #333333;
     --border-radius-adaptive: 24px;
+    --border-radius-adaptive-320: 16px;
   }
 
   body {
@@ -162,7 +163,8 @@ html {
     margin-bottom: 50px;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.1);
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
   }
 
   .header__logo {
@@ -183,7 +185,7 @@ html {
   }
 
   .header__item {
-    margin-right: 103px;
+    margin-right: 88px;
   }
 
   /* offers */
@@ -245,6 +247,7 @@ html {
     border-radius: var(--border-radius);
     flex-direction: column;
     justify-content: flex-end;
+    overflow: hidden ;
   }
 
   .about__left_card_text {
@@ -488,6 +491,42 @@ html {
   input[type="checkbox"], label {
     cursor: pointer;
   }
+
+  .hidden-checkbox {
+    display: none;
+  }
+  
+  .styled-checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--color-white-gray);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .hidden-checkbox:checked + .styled-checkbox::before {
+    content: url(/img/Rectangle\ 44.png); /* Используем иконку */
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    top: 40%;
+    left: 50%;
+  }
+  /* .custom__check {
+    width: 14px;
+    height: 14px;
+    appearance: none;
+    border: 1px solid var(--color-white-gray);
+    cursor: pointer;
+  }
+
+  .custom-checkbox:checked {
+    background-image: url(/img/Rectangle\ 44.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #97EE3F;
+  } */
 
   .label {
     font-family: "MyFontRegular";
