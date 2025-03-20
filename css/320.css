@@ -68,6 +68,7 @@
     }
 
     .offers {
+        height: 100%;
         overflow: hidden;
         background-image: url(/img/320.png);
         border-radius: var(--border-radius-adaptive-320);
@@ -127,19 +128,22 @@
 
     .about__left_card {
         min-width: 290px;
-        min-height: 400px;
+        min-height: 200px;
+        margin-bottom: 10px;
         border-radius: var(--border-radius-adaptive);
         background-size: contain;
         background-position: top;
-        position: relative;
     }
 
     .about__left_card_text {
         align-items: start;
-        padding-top: 6px;
         flex-direction: column;
         background: none;
-        position: absolute;
+        margin-bottom: 21px;
+    }
+
+    .about__container_bottom {
+        gap: 0;
     }
 
     .text_color {
@@ -279,7 +283,7 @@
         align-items: center;
         gap: 10px;
         margin: 0;
-        margin-top: 21px;
+        margin-top: 5px;
     }
 
     .footer__nav_list {

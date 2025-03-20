@@ -191,12 +191,13 @@ html {
   }
 
   .header__item {
-    margin-right: 88px;
+    margin-right: 105px;
   }
 
   /* offers */
   .offers {
     width: 100%;
+    height: 620px;
     overflow: hidden;
     background-image: url(/img/low-angle-photo-of-balconies-2462015\ 1.png);
     background-repeat: no-repeat;
@@ -207,6 +208,7 @@ html {
 
   .offers__container {
     display: inline-block;
+    max-width: 890px;
     margin: 105px 80px 100px 80px;
   }
 
@@ -262,6 +264,10 @@ html {
     min-height: 196px;
     background: var(--filter-gray);
     border-radius: var(--border-radius);
+  }
+
+  .mobile {
+    display: none;
   }
 
   .text_color {
@@ -517,22 +523,7 @@ html {
     top: 40%;
     left: 50%;
   }
-  /* .custom__check {
-    width: 14px;
-    height: 14px;
-    appearance: none;
-    border: 1px solid var(--color-white-gray);
-    cursor: pointer;
-  }
-
-  .custom-checkbox:checked {
-    background-image: url(/img/Rectangle\ 44.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #97EE3F;
-  } */
-
+  
   .label {
     font-family: "MyFontRegular";
     font-size: 16px;
