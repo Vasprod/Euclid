@@ -50,7 +50,7 @@
 
     .offers {
         width: 100%;
-        background-image: url(/img/768.jpg);
+        background-image: url(./img/768.jpg);
         border-radius: var(--border-radius-adaptive);
     }
 
