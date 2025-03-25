@@ -70,7 +70,7 @@
     .offers {
         height: 100%;
         overflow: hidden;
-        background-image: url(/img/320.png);
+        background-image: url(./img/320.png);
         border-radius: var(--border-radius-adaptive-320);
     }
 
